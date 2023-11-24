@@ -2,9 +2,7 @@
 
 void swap(int *a, int *b)
 {
-    int swp;
-
-    swp = *a;
+    int swp = *a;
     *a = *b;
     *b = swp;
 }
