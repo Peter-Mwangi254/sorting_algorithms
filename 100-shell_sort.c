@@ -21,14 +21,14 @@ while (interval > 0)
 {
 for (i = interval; i < size; i++)
 {
-tmp = array[i];
+temp = array[i];
 j = i;
-while (j >= interval && array[j - interval] > tmp)
+while (j >= interval && array[j - interval] > temp)
 {
 array[j] = array[j - interval];
 j -= interval;
 }
-array[j] = tmp;
+array[j] = temp;
 }
 print_array(array, size);
 interval = (interval - 1) / 3;
